@@ -1,4 +1,4 @@
-escolha_usuario = 23324
+escolha_usuario = 0
 #0 -> sair do programa
 #1 -> entrar no programa
 # >>> erra!!
