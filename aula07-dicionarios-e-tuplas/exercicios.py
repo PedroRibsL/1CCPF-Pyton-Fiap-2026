@@ -55,7 +55,9 @@ lista_usuarios[0], lista_usuarios[-1] = lista_usuarios[-1], lista_usuarios[0]
 tupla_trocada = tuple(lista_usuarios)
 print("Após troca de posições:", tupla_trocada)
 
-print("\nRelatório:")
+print()
+
+print("Relatório:")
 print("Quantidade de e-mails por domínio:")
 for dominio, quantidade in dominios.items():
     print(f"{dominio}: {quantidade}")
