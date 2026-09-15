@@ -1,77 +1,91 @@
-#ex 1
-while True:
-    print("Olá, Mundo")
+# Escreva um programa que dadas duas notas de 0 a 10 calcula a média aritmética entre elas.
 
-    resposta = input("Deseja exibir a mensagem novamente? (sim/não): ")
-
-    if resposta.lower() != "sim":
-        break
-
-print("Fim")
-
-#ex 2
-
-for i in range(0, 101, 10):
-    print(i)
+# n1 = float(input("Digite a 1 nota: "))
+# while n1 < 0 or n1 > 10:
+#     print("nota invalida, digite valor de 0 a 10!")
+#     n1 = float(input("Digite a 1 nota: "))
 
 
-# ex 3
+# n2 = float(input("Digite a 2 nota: "))
+# while n2 < 0 or n2 > 10:
+#     print("nota invalida, digite valor de 0 a 10!")
+#     n1 = float(input("Digite a 2 nota: "))
 
-n = int(input("Digite um número: "))
+# media = (n1 + n2) / 2
 
-for i in range(0, 26):
-    print(f"{n} x {i} = {n * i}")
+# print(f"a media é : {media:.2f}")
 
+# Faça um programa que receba a quantidade de produtos que o usuário deseja
+# ▪ A seguir, seu programa deve exibir a mensagem “Produto” a quantidade de vezes que o usuário
+# solicitou.
+# ▪ Utilize o laço for.
 
-# ex 4
+# produtos = int(input("informe a quantidade de produtos: "))
 
-soma = 0
-for i in range(0, 5):
-    valor = int(input("Digite um valor: "))
-    soma += valor
-print(f"Soma: {soma}")
+# for i in range(produtos):
+#     print("Produto")
 
+# ▪ Faça um programa que exiba a mensagem “Olá, Mundo”.
+# ▪ Essa mensagem deverá ser exibida repetidamente.
+# ▪ Ao final de toda iteração da repetição, você deve perguntar ao usuário se ele deseja exibir a mensagem
+# novamente.
+# ▪ Se sim, exiba novamente. Senão, saia do loop e exiba a mensagem “Fim”.
 
-# ex 5
+# continuar = "sim"
 
-n = int(input("Digite um valor: "))
-for i in range(2, n+1, 2):
-    print(i)
+# while continuar == "sim":
+#     print("Olá, Mundo")
+#     continuar = (input("deseja exibir novamente?  ")).lower()
+    
+# print("fim")
 
+#  Contagem de 0 a 100 pulando de 10 em 10.
+# ▪ O terminal deve ficar assim:
+# 13
+# 0
+# 10
+# 20
+# 30
+# 40
+# 50
+# 60
+# 70
+# 80
+# 90
+# 100
 
-# ex 6
+# for i in range(0, 101, 10):
+#     count = 0
+#     print(i)
 
-maior = int(input("Digite um valor: "))
-for i in range(0, 4):
-    valor = int(input("Digite um valor: "))
-    if valor > maior:
-        maior = valor
-print(f"Maior: {maior}")
+# ▪ Faça um programa que receba um número n
+# ▪ Exiba a tabuada deste número do 0 ao 25.
+# ▪ Utilize laços de repetição.
 
-# ex 7
+# n = int(input("digite n: "))
 
-n = int(input("Digite um número positivo: "))
-while n <= 0:
-    n = int(input("Digite um número positivo: "))
-soma = 0
-for i in range(1, n+1):
-    soma += i
-print(f"A soma de 1 até {n} é: {soma}")
+# for i in range(26):
+#     count = 1
+#     print(f"{n} x {i} = {n * 1}")
 
-# ex 8
+# ▪ Faça um programa que receba 5 valores digitados pelo usuário e, ao final, informe qual é a soma deles.
 
-n = int(input("Digite um número: "))
-for i in range(1, n+1):
-    if n % i == 0:
-        print(i)
+# soma = 0
+# for i in range(5):
+#     n = int(input("Digite o valor: "))
+    
+#     soma += n
+    
+# print(f"a soma é: {soma}")
 
-# ex 9
+# Faça um programa que receba 5 valores digitados pelo usuário e, ao final, informe qual é o maior deles
 
-for n in range(2, 2001):
-    primo = True
-    for i in range(2, n):
-        if n % i == 0:
-            primo = False
-            break
-    if primo:
-        print(n)
+maior = None
+
+for i in range(5):
+    n = int(input("Digite o valor: "))
+    
+    if maior is None or n > maior:
+        maior = n
+        
+print(f"o maior valor é: {maior}")
