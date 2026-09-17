@@ -12,5 +12,12 @@
     "company": "Nike",
     "step": "novo",
     "created": "2026-09-10"
+  },
+  {
+    "name": "jose",
+    "email": "jj@b.com",
+    "company": "Nike",
+    "step": "novo",
+    "created": "2026-09-17"
   }
 ]
